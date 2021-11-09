@@ -1,0 +1,6 @@
+- !Performer
+  name: "lux trigger"
+  for appliance: "lux"
+  commands: []
+  triggers:
+  - !knx_plugin.trigger.dpt_value_lux.Always {addresses: [0x0A04]}

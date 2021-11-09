@@ -1,0 +1,11 @@
+- !schedule
+  trigger: "weekdays wakeup time"
+  for performers: "all curtains commands"
+
+- !schedule
+  trigger: "weekend wakeup time"
+  for performers: "all curtains commands"
+
+- !schedule
+  trigger: "going to bed"
+  for performers: "all curtains commands"

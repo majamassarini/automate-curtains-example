@@ -1,0 +1,20 @@
+- !schedule
+  trigger: "weak wind scheduler trigger"
+  for performers: "all curtains commands"
+
+- !schedule
+  trigger: "strong wind scheduler trigger"
+  for performers: "all curtains commands"
+
+- !schedule
+  trigger: "bright outside scheduler trigger"
+  for performers: "all curtains commands"
+
+- !schedule
+  trigger: "dark outside scheduler trigger"
+  for performers: "all curtains commands"
+
+- !schedule
+  trigger: "deep dark outside scheduler trigger"
+  for performers: "all curtains commands"
+

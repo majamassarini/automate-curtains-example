@@ -1,0 +1,23 @@
+- !schedule
+  trigger: "sunrise civil twilight"
+  for performers: "all curtains commands"
+
+- !schedule
+  trigger: "sunset civil twilight"
+  for performers: "all curtains commands"
+
+- !schedule
+  trigger: "sunhit (west facade)"
+  for performers: "west curtains commands"
+
+- !schedule
+  trigger: "sunleft (west facade)"
+  for performers: "west curtains commands"
+
+- !schedule
+  trigger: "sunhit (sud facade)"
+  for performers: "sud curtains commands"
+
+- !schedule
+  trigger: "sunleft (sud facade)"
+  for performers: "sud curtains commands"

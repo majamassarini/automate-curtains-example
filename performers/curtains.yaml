@@ -1,0 +1,11 @@
+all curtains commands:
+  - "indoor blackout curtain command"
+  - "outdoor curtain command"
+  - "outdoor bedroom curtain command"
+
+sud curtains commands:
+  - "outdoor bedroom curtain command"
+
+west curtains commands:
+  - "outdoor curtain command"
+

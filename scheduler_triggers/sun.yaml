@@ -1,0 +1,45 @@
+- !sun.twilight.civil.sunrise.Trigger
+  name: "sunrise civil twilight"
+  notify more events: []
+  latitude: 46.201685
+  longitude: 13.209001
+  elevation: 280
+
+- !sun.twilight.civil.sunset.Trigger
+  name: "sunset civil twilight"
+  notify more events: []
+  latitude: 46.201685
+  longitude: 13.209001
+  elevation: 280
+
+- !sun.sunhit.Trigger
+  name: "sunhit (sud facade)"
+  notify more events: []
+  latitude: 46.201685
+  longitude: 13.209001
+  elevation: 280
+  position: !Position {bottom_altitude: 10, upper_altitude: 90, min_azimuth: 145, max_azimuth: 270}
+
+- !sun.sunleft.Trigger
+  name: "sunleft (sud facade)"
+  notify more events: []
+  latitude: 46.201685
+  longitude: 13.209001
+  elevation: 280
+  position: !Position {bottom_altitude: 10, upper_altitude: 90, min_azimuth: 145, max_azimuth: 270}
+
+- !sun.sunhit.Trigger
+  name: "sunhit (west facade)"
+  notify more events: []
+  latitude: 46.201685
+  longitude: 13.209001
+  elevation: 280
+  position: !Position {bottom_altitude: 10, upper_altitude: 90, min_azimuth: 225, max_azimuth: 315}
+
+- !sun.sunleft.Trigger
+  name: "sunleft (west facade)"
+  notify more events: []
+  latitude: 46.201685
+  longitude: 13.209001
+  elevation: 280
+  position: !Position {bottom_altitude: 20, upper_altitude: 90, min_azimuth: 225, max_azimuth: 315}

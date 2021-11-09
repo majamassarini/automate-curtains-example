@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+* AerWebCopy Engine [version 6.3.0]
+* Copyright Aeroson Systems & Co.
+* File mirrored from http://172.31.10.244:8181/appliance/an outdoor bedroom curtain
+* At UTC time: 2021-11-09 19:40:48.152148
+
+--><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../static/d3e14e99__icon_128x128_blu.png">
+    <link rel="stylesheet" href="../../cdn.jsdelivr.net/npm/bulma%400.9.1/css/dff7d2a4__bulma.min.css">
+    <link rel="stylesheet" href="../static/e5b95a23__homino.css">
+
+    <title>an outdoor bedroom curtain</title>
+
+    <script type="text/javascript" src="../../ajax.googleapis.com/ajax/libs/jquery/1/0a8ce0df__jquery.min.js"></script>
+    <script src="../../kit.fontawesome.com/f5f88875__dcf90dd78d.js"></script>
+    <script type="text/javascript" src="../static/395d836c__homino.js"></script>
+</head>
+
+<body>
+<section class="section">
+    <div class="container">
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <img src="../static/d3e14e99__icon_128x128_blu.png" width="32" height="32">
+        </a>
+
+        <a role="button" id="burger-button" onclick='$("#burger-button").toggleClass("is-active");$("#home-navbar").toggleClass("is-active")' class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="home-navbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="home-navbar" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="../355d7eed__index.html">
+            <span class="icon has-text-info">
+                <i class="fas fa-home"></i>
+            </span>
+                <span>Home</span>
+            </a>
+            <a class="navbar-item" href="../fd64d9c6__collections.html">
+                <span class="icon has-text-info">
+                <i class="fas fa-list"></i>
+            </span>
+                <span>Collections</span>
+            </a>
+            
+            <!--a class="navbar-item" href="/editor">
+                <span class="icon has-text-info">
+                <i class="fas fa-edit"></i>
+            </span>
+                <span>Configurator</span>
+            </a-->
+            <a class="navbar-item" href="../0be1a6a1__logs.html">
+                <span class="icon has-text-info">
+                <i class="far fa-clipboard"></i>
+            </span>
+                <span>Logs</span>
+            </a>
+            
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                
+                <div class="buttons">
+                    <label class="label is-info mr-3">admin</label>
+                    <form action="../c34ddca0__logout.html" method="post">
+                        <input class="button is-light" type="submit" value="Logout">
+                    </form>
+                </div>
+                
+                <div class="modal" id="modal-login">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Login</p>
+            <button onclick='$("#modal-login").removeClass("is-active")' class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <form action="../61b66b5f__login.html" method="post">
+                <label for="username">Username</label>
+                <input class="input is-info" type="text" name="username" id="username" value="">
+                <label for="password">Password</label>
+                <input class="input is-info" type="password" name="password" id="password" value="">
+                <input class="button is-info mt-6" type="submit" value="Login">
+            </form>
+        </section>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <nav class="breadcrumb mt-6" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="../fd64d9c6__collections.html">Collections</a></li>
+                <li><a href="../collection/810b2ca1__Curtains.html">Curtains</a></li>
+                <li class="is-active"><a>an outdoor bedroom curtain</a></li>
+                <li><a href="an%20outdoor%20bedroom%20curtain/8400bf3d__graphs.html">graphs</a> <a href="an%20outdoor%20bedroom%20curtain/195b9d63__history.html">history</a> <a href="an%20outdoor%20bedroom%20curtain/e51c5417__details.html">details</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="title">an outdoor bedroom curtain is <b id="an-outdoor-bedroom-curtain">
+            <label class="ml-6" id="an-outdoor-bedroom-curtain-label">Closed</label>
+            <span class="icon has-text-dark ml-2">
+                <i id="an-outdoor-bedroom-curtain-icon" class="fas fa-door-closed"></i>
+            </span>
+        </b>
+        </h1>
+
+        <div class="tile is-ancestor is-vertical mt-6">
+            
+
+                
+                    <form class="tile is-parent box" action="./c907855a__an%20outdoor%20bedroom%20curtain.html" method="POST" id="form-an-outdoor-bedroom-curtain-5">
+                        <input type="hidden" name="module" value="home.appliance.curtain.event.forced.event">
+                        <input type="hidden" name="klass" value="Event">
+                        <div class="tile is-child is-3">
+    <label for="an-outdoor-bedroom-curtain-5-label">Is it forced?</label>
+</div>
+<div class="tile is-child pr-6">
+    <span class="icon has-text-info">
+        <i id="an-outdoor-bedroom-curtain-5-icon" class="far fa-thumbs-up"></i>
+    </span>
+
+    <div class="select is-info">
+            <select name="value" id="an-outdoor-bedroom-curtain-5" form="form-an-outdoor-bedroom-curtain-5" onchange="ajaxPostValue('', 'home.appliance.curtain.event.forced.event', 'Event', $('#an-outdoor-bedroom-curtain-5 option:selected').val())">
+                
+                    <option value="Opened">opened</option>
+                
+                    <option value="Closed">closed</option>
+                
+                    <option value="Not" selected>no</option>
+                
+            </select>
+    </div>
+
+</div>
+
+                        
+                        <div class="tile is-child is-1">
+                            <a onclick='$("#modal-an-outdoor-bedroom-curtain-5-enabled").addClass("is-active")'>
+                            <span class="icon has-text-info">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                            </a>
+                        </div>
+                        
+                    </form>
+                    <div class="modal" id="modal-an-outdoor-bedroom-curtain-5-enabled">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Actions on events: <br><em>Is it forced?</em></p>
+            <button onclick='$("#modal-an-outdoor-bedroom-curtain-5-enabled").removeClass("is-active")' class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+
+            <div>
+                Events of type <b>Is it forced?</b>
+                <div>
+                    <label class="checkbox">
+                        Enable processing for <b>an outdoor bedroom curtain</b>:
+                        <input name="value" id="an-outdoor-bedroom-curtain-5-enabled" class="double ml-2" type="checkbox" checked onchange="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/enable',
+                                       'home.appliance.curtain.event.forced.event', 'Event',
+                                       $('#an-outdoor-bedroom-curtain-5-enabled').prop('checked'))">
+                    </label>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/apply_to_others',
+                                    'home.appliance.curtain.event.forced.event', 'Event',
+                                    $('#an-outdoor-bedroom-curtain-5-enabled').prop('checked'));
+                                    $('#modal-an-outdoor-bedroom-curtain-5-enabled').removeClass('is-active')">
+                        Apply to all similar appliances
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/apply_to_collection',
+                                    'home.appliance.curtain.event.forced.event', 'Event',
+                                    $('#an-outdoor-bedroom-curtain-5-enabled').prop('checked'));
+                                    $('#modal-an-outdoor-bedroom-curtain-5-enabled').removeClass('is-active')">
+                        Apply to similar appliances in the same collection
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="mt-4">
+                Event <b>Is it forced?: no</b>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20outdoor%20bedroom%20curtain/send_to_others',
+                                    'home.appliance.curtain.event.forced.event', 'Event');
+                                    $('#modal-an-outdoor-bedroom-curtain-5-enabled').removeClass('is-active')">
+                        Send to all similar appliances
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20outdoor%20bedroom%20curtain/send_to_collection',
+                                    'home.appliance.curtain.event.forced.event', 'Event');
+                                    $('#modal-an-outdoor-bedroom-curtain-5-enabled').removeClass('is-active')">
+                        Send to similar appliances in the same collection
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+                
+
+            
+
+                
+                    <form class="tile is-parent box" action="./c907855a__an%20outdoor%20bedroom%20curtain.html" method="POST" id="form-an-outdoor-bedroom-curtain-4">
+                        <input type="hidden" name="module" value="home.event.sleepiness">
+                        <input type="hidden" name="klass" value="Event">
+                        <div class="tile is-child is-3">
+    <label for="an-outdoor-bedroom-curtain-4-label">User is</label>
+</div>
+<div class="tile is-child pr-6">
+    <span class="icon has-text-info">
+        <i id="an-outdoor-bedroom-curtain-4-icon" class="fas fa-business-time"></i>
+    </span>
+
+    <div class="select is-info">
+            <select name="value" id="an-outdoor-bedroom-curtain-4" form="form-an-outdoor-bedroom-curtain-4" onchange="ajaxPostValue('', 'home.event.sleepiness', 'Event', $('#an-outdoor-bedroom-curtain-4 option:selected').val())">
+                
+                    <option value="Asleep">asleep</option>
+                
+                    <option value="Awake" selected>awake</option>
+                
+                    <option value="Sleepy">sleepy</option>
+                
+            </select>
+    </div>
+
+</div>
+
+                        
+                        <div class="tile is-child is-1">
+                            <a onclick='$("#modal-an-outdoor-bedroom-curtain-4-enabled").addClass("is-active")'>
+                            <span class="icon has-text-info">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                            </a>
+                        </div>
+                        
+                    </form>
+                    <div class="modal" id="modal-an-outdoor-bedroom-curtain-4-enabled">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Actions on events: <br><em>User is</em></p>
+            <button onclick='$("#modal-an-outdoor-bedroom-curtain-4-enabled").removeClass("is-active")' class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+
+            <div>
+                Events of type <b>User is</b>
+                <div>
+                    <label class="checkbox">
+                        Enable processing for <b>an outdoor bedroom curtain</b>:
+                        <input name="value" id="an-outdoor-bedroom-curtain-4-enabled" class="double ml-2" type="checkbox" checked onchange="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/enable',
+                                       'home.event.sleepiness', 'Event',
+                                       $('#an-outdoor-bedroom-curtain-4-enabled').prop('checked'))">
+                    </label>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/apply_to_others',
+                                    'home.event.sleepiness', 'Event',
+                                    $('#an-outdoor-bedroom-curtain-4-enabled').prop('checked'));
+                                    $('#modal-an-outdoor-bedroom-curtain-4-enabled').removeClass('is-active')">
+                        Apply to all similar appliances
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/apply_to_collection',
+                                    'home.event.sleepiness', 'Event',
+                                    $('#an-outdoor-bedroom-curtain-4-enabled').prop('checked'));
+                                    $('#modal-an-outdoor-bedroom-curtain-4-enabled').removeClass('is-active')">
+                        Apply to similar appliances in the same collection
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="mt-4">
+                Event <b>User is: awake</b>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20outdoor%20bedroom%20curtain/send_to_others',
+                                    'home.event.sleepiness', 'Event');
+                                    $('#modal-an-outdoor-bedroom-curtain-4-enabled').removeClass('is-active')">
+                        Send to all similar appliances
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20outdoor%20bedroom%20curtain/send_to_collection',
+                                    'home.event.sleepiness', 'Event');
+                                    $('#modal-an-outdoor-bedroom-curtain-4-enabled').removeClass('is-active')">
+                        Send to similar appliances in the same collection
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+                
+
+            
+
+                
+                    <form class="tile is-parent box" action="./c907855a__an%20outdoor%20bedroom%20curtain.html" method="POST" id="form-an-outdoor-bedroom-curtain-3">
+                        <input type="hidden" name="module" value="home.event.sun.hit">
+                        <input type="hidden" name="klass" value="Event">
+                        <div class="tile is-child is-3">
+    <label for="an-outdoor-bedroom-curtain-3-label">Sun is</label>
+</div>
+<div class="tile is-child pr-6">
+    <span class="icon has-text-info">
+        <i id="an-outdoor-bedroom-curtain-3-icon" class="far fa-square"></i>
+    </span>
+
+    <div class="select is-info">
+            <select name="value" id="an-outdoor-bedroom-curtain-3" form="form-an-outdoor-bedroom-curtain-3" onchange="ajaxPostValue('', 'home.event.sun.hit', 'Event', $('#an-outdoor-bedroom-curtain-3 option:selected').val())">
+                
+                    <option value="Sunhit">over</option>
+                
+                    <option value="Sunleft" selected>gone</option>
+                
+            </select>
+    </div>
+
+</div>
+
+                        
+                        <div class="tile is-child is-1">
+                            <a onclick='$("#modal-an-outdoor-bedroom-curtain-3-enabled").addClass("is-active")'>
+                            <span class="icon has-text-info">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                            </a>
+                        </div>
+                        
+                    </form>
+                    <div class="modal" id="modal-an-outdoor-bedroom-curtain-3-enabled">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Actions on events: <br><em>Sun is</em></p>
+            <button onclick='$("#modal-an-outdoor-bedroom-curtain-3-enabled").removeClass("is-active")' class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+
+            <div>
+                Events of type <b>Sun is</b>
+                <div>
+                    <label class="checkbox">
+                        Enable processing for <b>an outdoor bedroom curtain</b>:
+                        <input name="value" id="an-outdoor-bedroom-curtain-3-enabled" class="double ml-2" type="checkbox" checked onchange="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/enable',
+                                       'home.event.sun.hit', 'Event',
+                                       $('#an-outdoor-bedroom-curtain-3-enabled').prop('checked'))">
+                    </label>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/apply_to_others',
+                                    'home.event.sun.hit', 'Event',
+                                    $('#an-outdoor-bedroom-curtain-3-enabled').prop('checked'));
+                                    $('#modal-an-outdoor-bedroom-curtain-3-enabled').removeClass('is-active')">
+                        Apply to all similar appliances
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/apply_to_collection',
+                                    'home.event.sun.hit', 'Event',
+                                    $('#an-outdoor-bedroom-curtain-3-enabled').prop('checked'));
+                                    $('#modal-an-outdoor-bedroom-curtain-3-enabled').removeClass('is-active')">
+                        Apply to similar appliances in the same collection
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="mt-4">
+                Event <b>Sun is: gone</b>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20outdoor%20bedroom%20curtain/send_to_others',
+                                    'home.event.sun.hit', 'Event');
+                                    $('#modal-an-outdoor-bedroom-curtain-3-enabled').removeClass('is-active')">
+                        Send to all similar appliances
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20outdoor%20bedroom%20curtain/send_to_collection',
+                                    'home.event.sun.hit', 'Event');
+                                    $('#modal-an-outdoor-bedroom-curtain-3-enabled').removeClass('is-active')">
+                        Send to similar appliances in the same collection
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+                
+
+            
+
+                
+                    <form class="tile is-parent box" action="./c907855a__an%20outdoor%20bedroom%20curtain.html" method="POST" id="form-an-outdoor-bedroom-curtain-2">
+                        <input type="hidden" name="module" value="home.event.sun.twilight.civil">
+                        <input type="hidden" name="klass" value="Event">
+                        <div class="tile is-child is-3">
+    <label for="an-outdoor-bedroom-curtain-2-label">Sun is</label>
+</div>
+<div class="tile is-child pr-6">
+    <span class="icon has-text-info">
+        <i id="an-outdoor-bedroom-curtain-2-icon" class="fas fa-globe"></i>
+    </span>
+
+    <div class="select is-info">
+            <select name="value" id="an-outdoor-bedroom-curtain-2" form="form-an-outdoor-bedroom-curtain-2" onchange="ajaxPostValue('', 'home.event.sun.twilight.civil', 'Event', $('#an-outdoor-bedroom-curtain-2 option:selected').val())">
+                
+                    <option value="Sunset" selected>set (civil twilight)</option>
+                
+                    <option value="Sunrise">rised (civil twilight)</option>
+                
+            </select>
+    </div>
+
+</div>
+
+                        
+                        <div class="tile is-child is-1">
+                            <a onclick='$("#modal-an-outdoor-bedroom-curtain-2-enabled").addClass("is-active")'>
+                            <span class="icon has-text-info">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                            </a>
+                        </div>
+                        
+                    </form>
+                    <div class="modal" id="modal-an-outdoor-bedroom-curtain-2-enabled">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Actions on events: <br><em>Sun is</em></p>
+            <button onclick='$("#modal-an-outdoor-bedroom-curtain-2-enabled").removeClass("is-active")' class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+
+            <div>
+                Events of type <b>Sun is</b>
+                <div>
+                    <label class="checkbox">
+                        Enable processing for <b>an outdoor bedroom curtain</b>:
+                        <input name="value" id="an-outdoor-bedroom-curtain-2-enabled" class="double ml-2" type="checkbox" checked onchange="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/enable',
+                                       'home.event.sun.twilight.civil', 'Event',
+                                       $('#an-outdoor-bedroom-curtain-2-enabled').prop('checked'))">
+                    </label>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/apply_to_others',
+                                    'home.event.sun.twilight.civil', 'Event',
+                                    $('#an-outdoor-bedroom-curtain-2-enabled').prop('checked'));
+                                    $('#modal-an-outdoor-bedroom-curtain-2-enabled').removeClass('is-active')">
+                        Apply to all similar appliances
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/apply_to_collection',
+                                    'home.event.sun.twilight.civil', 'Event',
+                                    $('#an-outdoor-bedroom-curtain-2-enabled').prop('checked'));
+                                    $('#modal-an-outdoor-bedroom-curtain-2-enabled').removeClass('is-active')">
+                        Apply to similar appliances in the same collection
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="mt-4">
+                Event <b>Sun is: set (civil twilight)</b>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20outdoor%20bedroom%20curtain/send_to_others',
+                                    'home.event.sun.twilight.civil', 'Event');
+                                    $('#modal-an-outdoor-bedroom-curtain-2-enabled').removeClass('is-active')">
+                        Send to all similar appliances
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20outdoor%20bedroom%20curtain/send_to_collection',
+                                    'home.event.sun.twilight.civil', 'Event');
+                                    $('#modal-an-outdoor-bedroom-curtain-2-enabled').removeClass('is-active')">
+                        Send to similar appliances in the same collection
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+                
+
+            
+
+                
+                    <form class="tile is-parent box" action="./c907855a__an%20outdoor%20bedroom%20curtain.html" method="POST" id="form-an-outdoor-bedroom-curtain-1">
+                        <input type="hidden" name="module" value="home.event.sun.brightness">
+                        <input type="hidden" name="klass" value="Event">
+                        <div class="tile is-child is-3">
+    <label for="an-outdoor-bedroom-curtain-1-label">Sun brightness is</label>
+</div>
+<div class="tile is-child pr-6">
+    <span class="icon has-text-info">
+        <i id="an-outdoor-bedroom-curtain-1-icon" class="fas fa-cloud"></i>
+    </span>
+
+    <div class="select is-info">
+            <select name="value" id="an-outdoor-bedroom-curtain-1" form="form-an-outdoor-bedroom-curtain-1" onchange="ajaxPostValue('', 'home.event.sun.brightness', 'Event', $('#an-outdoor-bedroom-curtain-1 option:selected').val())">
+                
+                    <option value="Bright">high</option>
+                
+                    <option value="Dark">low</option>
+                
+                    <option value="DeepDark" selected>very low</option>
+                
+            </select>
+    </div>
+
+</div>
+
+                        
+                        <div class="tile is-child is-1">
+                            <a onclick='$("#modal-an-outdoor-bedroom-curtain-1-enabled").addClass("is-active")'>
+                            <span class="icon has-text-info">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                            </a>
+                        </div>
+                        
+                    </form>
+                    <div class="modal" id="modal-an-outdoor-bedroom-curtain-1-enabled">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Actions on events: <br><em>Sun brightness is</em></p>
+            <button onclick='$("#modal-an-outdoor-bedroom-curtain-1-enabled").removeClass("is-active")' class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+
+            <div>
+                Events of type <b>Sun brightness is</b>
+                <div>
+                    <label class="checkbox">
+                        Enable processing for <b>an outdoor bedroom curtain</b>:
+                        <input name="value" id="an-outdoor-bedroom-curtain-1-enabled" class="double ml-2" type="checkbox" checked onchange="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/enable',
+                                       'home.event.sun.brightness', 'Event',
+                                       $('#an-outdoor-bedroom-curtain-1-enabled').prop('checked'))">
+                    </label>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/apply_to_others',
+                                    'home.event.sun.brightness', 'Event',
+                                    $('#an-outdoor-bedroom-curtain-1-enabled').prop('checked'));
+                                    $('#modal-an-outdoor-bedroom-curtain-1-enabled').removeClass('is-active')">
+                        Apply to all similar appliances
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/apply_to_collection',
+                                    'home.event.sun.brightness', 'Event',
+                                    $('#an-outdoor-bedroom-curtain-1-enabled').prop('checked'));
+                                    $('#modal-an-outdoor-bedroom-curtain-1-enabled').removeClass('is-active')">
+                        Apply to similar appliances in the same collection
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="mt-4">
+                Event <b>Sun brightness is: very low</b>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20outdoor%20bedroom%20curtain/send_to_others',
+                                    'home.event.sun.brightness', 'Event');
+                                    $('#modal-an-outdoor-bedroom-curtain-1-enabled').removeClass('is-active')">
+                        Send to all similar appliances
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20outdoor%20bedroom%20curtain/send_to_collection',
+                                    'home.event.sun.brightness', 'Event');
+                                    $('#modal-an-outdoor-bedroom-curtain-1-enabled').removeClass('is-active')">
+                        Send to similar appliances in the same collection
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+                
+
+            
+
+                
+                    <form class="tile is-parent box" action="./c907855a__an%20outdoor%20bedroom%20curtain.html" method="POST" id="form-an-outdoor-bedroom-curtain-0">
+                        <input type="hidden" name="module" value="home.event.wind">
+                        <input type="hidden" name="klass" value="Event">
+                        <div class="tile is-child is-3">
+    <label for="an-outdoor-bedroom-curtain-0-label">Wind is</label>
+</div>
+<div class="tile is-child pr-6">
+    <span class="icon has-text-info">
+        <i id="an-outdoor-bedroom-curtain-0-icon" class="fas fa-window-minimize"></i>
+    </span>
+
+    <div class="select is-info">
+            <select name="value" id="an-outdoor-bedroom-curtain-0" form="form-an-outdoor-bedroom-curtain-0" disabled onchange="ajaxPostValue('', 'home.event.wind', 'Event', $('#an-outdoor-bedroom-curtain-0 option:selected').val())">
+                
+                    <option value="Strong">strong</option>
+                
+                    <option value="Weak" selected>weak</option>
+                
+            </select>
+    </div>
+
+</div>
+
+                        
+                        <div class="tile is-child is-1">
+                            <a onclick='$("#modal-an-outdoor-bedroom-curtain-0-enabled").addClass("is-active")'>
+                            <span class="icon has-text-info">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                            </a>
+                        </div>
+                        
+                    </form>
+                    <div class="modal" id="modal-an-outdoor-bedroom-curtain-0-enabled">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Actions on events: <br><em>Wind is</em></p>
+            <button onclick='$("#modal-an-outdoor-bedroom-curtain-0-enabled").removeClass("is-active")' class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+
+            <div>
+                Events of type <b>Wind is</b>
+                <div>
+                    <label class="checkbox">
+                        Enable processing for <b>an outdoor bedroom curtain</b>:
+                        <input name="value" id="an-outdoor-bedroom-curtain-0-enabled" class="double ml-2" type="checkbox" onchange="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/enable',
+                                       'home.event.wind', 'Event',
+                                       $('#an-outdoor-bedroom-curtain-0-enabled').prop('checked'))">
+                    </label>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/apply_to_others',
+                                    'home.event.wind', 'Event',
+                                    $('#an-outdoor-bedroom-curtain-0-enabled').prop('checked'));
+                                    $('#modal-an-outdoor-bedroom-curtain-0-enabled').removeClass('is-active')">
+                        Apply to all similar appliances
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/apply_to_collection',
+                                    'home.event.wind', 'Event',
+                                    $('#an-outdoor-bedroom-curtain-0-enabled').prop('checked'));
+                                    $('#modal-an-outdoor-bedroom-curtain-0-enabled').removeClass('is-active')">
+                        Apply to similar appliances in the same collection
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="mt-4">
+                Event <b>Wind is: weak</b>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20outdoor%20bedroom%20curtain/send_to_others',
+                                    'home.event.wind', 'Event');
+                                    $('#modal-an-outdoor-bedroom-curtain-0-enabled').removeClass('is-active')">
+                        Send to all similar appliances
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20outdoor%20bedroom%20curtain/send_to_collection',
+                                    'home.event.wind', 'Event');
+                                    $('#modal-an-outdoor-bedroom-curtain-0-enabled').removeClass('is-active')">
+                        Send to similar appliances in the same collection
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+                
+
+            
+        </div>
+
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,41 @@
+- !protocol.Trigger
+  name: "strong wind scheduler trigger"
+  notify more events: []
+  when triggered performers: "strong wind trigger"
+
+- !protocol.mean.LesserThan
+  name: "weak wind scheduler trigger"
+  notify more events:
+    - !home.event.wind.Event.Weak
+  when triggered performers: "wind trigger"
+  num of samples: 30
+  hit value: 0.3
+  timeout seconds: 30
+
+- !protocol.mean.GreaterThan
+  name: "bright outside scheduler trigger"
+  notify more events:
+    - !home.event.sun.brightness.Event.Bright
+  when triggered performers: "lux trigger"
+  num of samples: 60
+  hit value: 45000
+  timeout seconds: 30
+
+- !protocol.mean.LesserThan
+  name: "deep dark outside scheduler trigger"
+  notify more events:
+    - !home.event.sun.brightness.Event.DeepDark
+  when triggered performers: "lux trigger"
+  num of samples: 60
+  hit value: 4000
+  timeout seconds: 30
+
+- !protocol.mean.InBetween
+  name: "dark outside scheduler trigger"
+  notify more events:
+    - !home.event.sun.brightness.Event.Dark
+  when triggered performers: "lux trigger"
+  num of samples: 60
+  min value: 9000
+  max value: 20000
+  timeout seconds: 30

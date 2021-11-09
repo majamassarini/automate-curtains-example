@@ -1,0 +1,8 @@
+!Appliances
+  Curtains:
+  - !curtain.indoor.blackout.Appliance {name: "an indoor blackout curtain", events: []}
+  - !curtain.outdoor.Appliance {name: "an outdoor curtain", events: []}
+  - !curtain.outdoor.bedroom.Appliance {name: "an outdoor bedroom curtain", events: []}
+  Sensors:
+  - !sensor.anemometer.Appliance {name: "wind", events: []}
+  - !sensor.luxmeter.Appliance {name: "lux", events: []}

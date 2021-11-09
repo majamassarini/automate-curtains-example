@@ -1,0 +1,17 @@
+- !Performer
+  name: "wind trigger"
+  for appliance: "wind"
+  commands: []
+  triggers:
+    - !home_assistant_plugin.service.sensor.float.trigger.Always {entity_id: "sensor.velocita_del_vento"}
+
+- !Performer
+  name: "strong wind trigger"
+  for appliance: "wind"
+  commands: []
+  triggers:
+    - !home_assistant_plugin.service.sensor.float.trigger.GreaterThan
+      entity_id: "sensor.velocita_del_vento"
+      events:
+        - !home.event.wind.Event.Strong
+      value: 3.0

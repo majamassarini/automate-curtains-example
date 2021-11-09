@@ -1,0 +1,21 @@
+- !cron.Trigger
+  name: "weekdays wakeup time"
+  notify events:
+    - !home.event.sleepiness.Event.Awake
+  day_of_week: "mon-fri"
+  hour: 7
+  minute: 15
+
+- !cron.Trigger
+  name: "weekend wakeup time"
+  notify events:
+  - !home.event.sleepiness.Event.Awake
+  day_of_week: "sat-sun"
+  hour: 9
+  minute: 00
+
+- !cron.Trigger
+  name: "going to bed"
+  notify events:
+    - !home.event.sleepiness.Event.Asleep
+  hour: 23

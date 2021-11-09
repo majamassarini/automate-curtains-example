@@ -1,0 +1,24 @@
+# My indoor curtain must not be able to go down automatically! -> use dpt_updown.Up command instead of UpDown command!
+# I have no open window sensors; if the system moves down the curtain when the window is opened its a problem.
+# Let the system just move up the curtain.
+
+- !Performer
+  name: "indoor blackout curtain command"
+  for appliance: "an indoor blackout curtain"
+  commands:
+  - !knx_plugin.command.dpt_updown.Up {addresses: [0x0C03,]}
+  triggers: []
+
+- !Performer
+  name: "indoor blackout curtain triggers"
+  for appliance: "an indoor blackout curtain"
+  commands: []
+  triggers:
+    - !knx_plugin.trigger.dpt_updown.Up
+      addresses: [0x0C03]
+      events:
+        - !home.appliance.curtain.event.forced.Event.Opened
+    - !knx_plugin.trigger.dpt_updown.Down
+      addresses: [0x0C03]
+      events:
+        - !home.appliance.curtain.event.forced.Event.Closed
