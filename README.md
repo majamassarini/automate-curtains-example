@@ -22,4 +22,4 @@ docker exec -it curtains /bin/bash
 
 ## UI
 
-[GUI example](gui/lights/172.31.10.244/index.html)
+[GUI example](https://majamassarini.github.io/automate-curtains-example/gh-pages/172.31.10.244/index.html)
