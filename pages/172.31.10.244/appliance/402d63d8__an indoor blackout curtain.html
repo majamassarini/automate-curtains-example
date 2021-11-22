@@ -5,7 +5,7 @@
 * AerWebCopy Engine [version 6.3.0]
 * Copyright Aeroson Systems & Co.
 * File mirrored from http://172.31.10.244:8181/appliance/an indoor blackout curtain
-* At UTC time: 2021-11-10 16:05:58.802935
+* At UTC time: 2021-11-22 21:47:53.311226
 
 --><head>
     <meta charset="utf-8">
@@ -111,9 +111,9 @@
         </nav>
 
         <h1 class="title">an indoor blackout curtain is <b id="an-indoor-blackout-curtain">
-            <label class="ml-6" id="an-indoor-blackout-curtain-label">Opened</label>
+            <label class="ml-6" id="an-indoor-blackout-curtain-label">Closed</label>
             <span class="icon has-text-dark ml-2">
-                <i id="an-indoor-blackout-curtain-icon" class="fas fa-door-open"></i>
+                <i id="an-indoor-blackout-curtain-icon" class="fas fa-door-closed"></i>
             </span>
         </b>
         </h1>
@@ -232,7 +232,7 @@
     </span>
 
     <div class="select is-info">
-            <select name="value" id="an-indoor-blackout-curtain-1" form="form-an-indoor-blackout-curtain-1" onchange="ajaxPostValue('', 'home.event.sleepiness', 'Event', $('#an-indoor-blackout-curtain-1 option:selected').val())">
+            <select name="value" id="an-indoor-blackout-curtain-1" form="form-an-indoor-blackout-curtain-1" disabled onchange="ajaxPostValue('', 'home.event.sleepiness', 'Event', $('#an-indoor-blackout-curtain-1 option:selected').val())">
                 
                     <option value="Asleep">asleep</option>
                 
@@ -269,7 +269,7 @@
                 <div>
                     <label class="checkbox">
                         Enable processing for <b>an indoor blackout curtain</b>:
-                        <input name="value" id="an-indoor-blackout-curtain-1-enabled" class="double ml-2" type="checkbox" checked onchange="ajaxPostValue('/appliance/an%20indoor%20blackout%20curtain/enable',
+                        <input name="value" id="an-indoor-blackout-curtain-1-enabled" class="double ml-2" type="checkbox" onchange="ajaxPostValue('/appliance/an%20indoor%20blackout%20curtain/enable',
                                        'home.event.sleepiness', 'Event',
                                        $('#an-indoor-blackout-curtain-1-enabled').prop('checked'))">
                     </label>
@@ -326,15 +326,15 @@
 </div>
 <div class="tile is-child pr-6">
     <span class="icon has-text-info">
-        <i id="an-indoor-blackout-curtain-0-icon" class="fas fa-globe-europe"></i>
+        <i id="an-indoor-blackout-curtain-0-icon" class="fas fa-globe"></i>
     </span>
 
     <div class="select is-info">
             <select name="value" id="an-indoor-blackout-curtain-0" form="form-an-indoor-blackout-curtain-0" onchange="ajaxPostValue('', 'home.event.sun.twilight.civil', 'Event', $('#an-indoor-blackout-curtain-0 option:selected').val())">
                 
-                    <option value="Sunset">set (civil twilight)</option>
+                    <option value="Sunset" selected>set (civil twilight)</option>
                 
-                    <option value="Sunrise" selected>rised (civil twilight)</option>
+                    <option value="Sunrise">rised (civil twilight)</option>
                 
             </select>
     </div>
@@ -390,7 +390,7 @@
 
 
             <div class="mt-4">
-                Event <b>Sun is: rised (civil twilight)</b>
+                Event <b>Sun is: set (civil twilight)</b>
                 <div class="mt-4">
                     <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20indoor%20blackout%20curtain/send_to_others',
                                     'home.event.sun.twilight.civil', 'Event');

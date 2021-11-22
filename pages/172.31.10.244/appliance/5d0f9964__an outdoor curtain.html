@@ -5,7 +5,7 @@
 * AerWebCopy Engine [version 6.3.0]
 * Copyright Aeroson Systems & Co.
 * File mirrored from http://172.31.10.244:8181/appliance/an outdoor curtain
-* At UTC time: 2021-11-10 16:05:58.891762
+* At UTC time: 2021-11-22 21:47:53.281659
 
 --><head>
     <meta charset="utf-8">
@@ -111,9 +111,9 @@
         </nav>
 
         <h1 class="title">an outdoor curtain is <b id="an-outdoor-curtain">
-            <label class="ml-6" id="an-outdoor-curtain-label">Forced Closed</label>
+            <label class="ml-6" id="an-outdoor-curtain-label">Forced Opened</label>
             <span class="icon has-text-dark ml-2">
-                <i id="an-outdoor-curtain-icon" class="far fa-hand-point-down"></i>
+                <i id="an-outdoor-curtain-icon" class="far fa-hand-point-up"></i>
             </span>
         </b>
         </h1>
@@ -130,15 +130,15 @@
 </div>
 <div class="tile is-child pr-6">
     <span class="icon has-text-info">
-        <i id="an-outdoor-curtain-4-icon" class="far fa-hand-point-down"></i>
+        <i id="an-outdoor-curtain-4-icon" class="far fa-hand-point-up"></i>
     </span>
 
     <div class="select is-info">
             <select name="value" id="an-outdoor-curtain-4" form="form-an-outdoor-curtain-4" onchange="ajaxPostValue('', 'home.appliance.curtain.event.forced.event', 'Event', $('#an-outdoor-curtain-4 option:selected').val())">
                 
-                    <option value="Opened">opened</option>
+                    <option value="Opened" selected>opened</option>
                 
-                    <option value="Closed" selected>closed</option>
+                    <option value="Closed">closed</option>
                 
                     <option value="Not">no</option>
                 
@@ -196,7 +196,7 @@
 
 
             <div class="mt-4">
-                Event <b>Is it forced?: closed</b>
+                Event <b>Is it forced?: opened</b>
                 <div class="mt-4">
                     <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20outdoor%20curtain/send_to_others',
                                     'home.appliance.curtain.event.forced.event', 'Event');
@@ -324,15 +324,15 @@
 </div>
 <div class="tile is-child pr-6">
     <span class="icon has-text-info">
-        <i id="an-outdoor-curtain-2-icon" class="fas fa-globe-europe"></i>
+        <i id="an-outdoor-curtain-2-icon" class="fas fa-globe"></i>
     </span>
 
     <div class="select is-info">
             <select name="value" id="an-outdoor-curtain-2" form="form-an-outdoor-curtain-2" onchange="ajaxPostValue('', 'home.event.sun.twilight.civil', 'Event', $('#an-outdoor-curtain-2 option:selected').val())">
                 
-                    <option value="Sunset">set (civil twilight)</option>
+                    <option value="Sunset" selected>set (civil twilight)</option>
                 
-                    <option value="Sunrise" selected>rised (civil twilight)</option>
+                    <option value="Sunrise">rised (civil twilight)</option>
                 
             </select>
     </div>
@@ -388,7 +388,7 @@
 
 
             <div class="mt-4">
-                Event <b>Sun is: rised (civil twilight)</b>
+                Event <b>Sun is: set (civil twilight)</b>
                 <div class="mt-4">
                     <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20outdoor%20curtain/send_to_others',
                                     'home.event.sun.twilight.civil', 'Event');
@@ -522,7 +522,7 @@
     </span>
 
     <div class="select is-info">
-            <select name="value" id="an-outdoor-curtain-0" form="form-an-outdoor-curtain-0" disabled onchange="ajaxPostValue('', 'home.event.wind', 'Event', $('#an-outdoor-curtain-0 option:selected').val())">
+            <select name="value" id="an-outdoor-curtain-0" form="form-an-outdoor-curtain-0" onchange="ajaxPostValue('', 'home.event.wind', 'Event', $('#an-outdoor-curtain-0 option:selected').val())">
                 
                     <option value="Strong">strong</option>
                 
@@ -557,7 +557,7 @@
                 <div>
                     <label class="checkbox">
                         Enable processing for <b>an outdoor curtain</b>:
-                        <input name="value" id="an-outdoor-curtain-0-enabled" class="double ml-2" type="checkbox" onchange="ajaxPostValue('/appliance/an%20outdoor%20curtain/enable',
+                        <input name="value" id="an-outdoor-curtain-0-enabled" class="double ml-2" type="checkbox" checked onchange="ajaxPostValue('/appliance/an%20outdoor%20curtain/enable',
                                        'home.event.wind', 'Event',
                                        $('#an-outdoor-curtain-0-enabled').prop('checked'))">
                     </label>

@@ -1,7 +1,7 @@
 import pywebcopy
 
 url = "http://172.31.10.244:8181"
-kwargs = {'project_name': 'gh-pages'}
+kwargs = {'project_name': 'pages'}
 
 payload = {'username': "admin", 'password': "admin"}
 pywebcopy.SESSION.post("{}/login".format(url), data=payload)

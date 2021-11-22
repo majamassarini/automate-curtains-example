@@ -5,5 +5,5 @@ window.FontAwesomeKitConfig = {"asyncLoading":{"enabled":false},"autoA11y":{"ena
 * AerWebCopy Engine [version 6.3.0]
 * Copyright Aeroson Systems & Co.
 * File mirrored from https://kit.fontawesome.com/dcf90dd78d.js
-* At UTC time: 2021-11-10 16:05:58.958936
+* At UTC time: 2021-11-22 21:47:53.528346
 */

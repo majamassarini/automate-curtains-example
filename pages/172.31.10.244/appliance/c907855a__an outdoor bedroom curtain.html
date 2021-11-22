@@ -5,7 +5,7 @@
 * AerWebCopy Engine [version 6.3.0]
 * Copyright Aeroson Systems & Co.
 * File mirrored from http://172.31.10.244:8181/appliance/an outdoor bedroom curtain
-* At UTC time: 2021-11-10 16:05:59.637642
+* At UTC time: 2021-11-22 21:47:53.369318
 
 --><head>
     <meta charset="utf-8">
@@ -111,9 +111,9 @@
         </nav>
 
         <h1 class="title">an outdoor bedroom curtain is <b id="an-outdoor-bedroom-curtain">
-            <label class="ml-6" id="an-outdoor-bedroom-curtain-label">Opened</label>
+            <label class="ml-6" id="an-outdoor-bedroom-curtain-label">Closed</label>
             <span class="icon has-text-dark ml-2">
-                <i id="an-outdoor-bedroom-curtain-icon" class="fas fa-door-open"></i>
+                <i id="an-outdoor-bedroom-curtain-icon" class="fas fa-door-closed"></i>
             </span>
         </b>
         </h1>
@@ -422,15 +422,15 @@
 </div>
 <div class="tile is-child pr-6">
     <span class="icon has-text-info">
-        <i id="an-outdoor-bedroom-curtain-2-icon" class="fas fa-globe-europe"></i>
+        <i id="an-outdoor-bedroom-curtain-2-icon" class="fas fa-globe"></i>
     </span>
 
     <div class="select is-info">
             <select name="value" id="an-outdoor-bedroom-curtain-2" form="form-an-outdoor-bedroom-curtain-2" onchange="ajaxPostValue('', 'home.event.sun.twilight.civil', 'Event', $('#an-outdoor-bedroom-curtain-2 option:selected').val())">
                 
-                    <option value="Sunset">set (civil twilight)</option>
+                    <option value="Sunset" selected>set (civil twilight)</option>
                 
-                    <option value="Sunrise" selected>rised (civil twilight)</option>
+                    <option value="Sunrise">rised (civil twilight)</option>
                 
             </select>
     </div>
@@ -486,7 +486,7 @@
 
 
             <div class="mt-4">
-                Event <b>Sun is: rised (civil twilight)</b>
+                Event <b>Sun is: set (civil twilight)</b>
                 <div class="mt-4">
                     <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20outdoor%20bedroom%20curtain/send_to_others',
                                     'home.event.sun.twilight.civil', 'Event');
@@ -620,7 +620,7 @@
     </span>
 
     <div class="select is-info">
-            <select name="value" id="an-outdoor-bedroom-curtain-0" form="form-an-outdoor-bedroom-curtain-0" disabled onchange="ajaxPostValue('', 'home.event.wind', 'Event', $('#an-outdoor-bedroom-curtain-0 option:selected').val())">
+            <select name="value" id="an-outdoor-bedroom-curtain-0" form="form-an-outdoor-bedroom-curtain-0" onchange="ajaxPostValue('', 'home.event.wind', 'Event', $('#an-outdoor-bedroom-curtain-0 option:selected').val())">
                 
                     <option value="Strong">strong</option>
                 
@@ -655,7 +655,7 @@
                 <div>
                     <label class="checkbox">
                         Enable processing for <b>an outdoor bedroom curtain</b>:
-                        <input name="value" id="an-outdoor-bedroom-curtain-0-enabled" class="double ml-2" type="checkbox" onchange="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/enable',
+                        <input name="value" id="an-outdoor-bedroom-curtain-0-enabled" class="double ml-2" type="checkbox" checked onchange="ajaxPostValue('/appliance/an%20outdoor%20bedroom%20curtain/enable',
                                        'home.event.wind', 'Event',
                                        $('#an-outdoor-bedroom-curtain-0-enabled').prop('checked'))">
                     </label>
